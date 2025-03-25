@@ -4,9 +4,24 @@
 <h1 align="center">Projet d'innovation - Steganography</h1>
 
 ---
+## 📝 Introduction
 
-## 📝 Sujets
+Le projet Steganography est un Travail Personnel d'Innovation (TPI) réalisé dans le cadre de notre Master 2 MIAGE. Il porte sur l'exploration de la stéganographie, une technique permettant de cacher des informations dans des fichiers.
 
+L'objectif de ce projet est de démontrer l'usage de la stéganographie pour dissimuler des messages secrets de manière invisible à l'œil nu.
+
+Le projet se compose de plusieurs parties :
+
+- Un backend pour gérer la logique métier et les interactions avec la base de données.
+- Un frontend pour fournir une interface utilisateur permettant de gérer l'intégration et l'extraction des messages.
+- Des outils comme F5 ou Outguess pour l'insertion et l'extraction des messages secrets dans les images.
+  
+## 🔧 Liens utiles
+
+1. [Backend](https://github.com/B3njaminV/mbds-steganography-project/tree/main/Sources/backend-api)
+2. [Frontend](https://github.com/B3njaminV/mbds-steganography-project/tree/main/Sources/frontend-web)
+3. [F5](https://github.com/B3njaminV/mbds-steganography-project/tree/main/Outils/F5)
+4. [Outguess](https://github.com/B3njaminV/mbds-steganography-project/tree/main/Outils/Outguess)
 
 
 ## ✍️ Auteurs

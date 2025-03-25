@@ -1,0 +1,30 @@
+.main-layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr 90px;
+}
+
+.page-content{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    overflow-y: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .main-layout {
+        grid-template-rows: 1fr;
+    }
+
+    .page-content{
+        grid-template-columns: 0px 1fr;
+        overflow-y: auto;
+        padding-top: 2em;
+        padding-bottom: calc(2em + 50px);
+    }
+
+}

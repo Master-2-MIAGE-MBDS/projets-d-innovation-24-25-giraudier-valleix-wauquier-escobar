@@ -1,0 +1,67 @@
+.oscult{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.oscult-main-logo{
+    width: 28%;
+    height: auto;
+}
+
+.oscult-page-container{
+    width: 70%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oscult-own-container{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.oscult-own-label,.oscult-own-name{
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.oscult-own-label{
+    width: fit-content;
+    border: 3px solid var(--color-white);
+    padding-left: .5em;
+    padding-right: .6em;
+
+    padding: .2em .5em .2em .5em;
+    border-radius: 1em;
+}
+
+.oscult-own-name{
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 2em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.oscult-sep{
+    height: 2em;
+}
+
+.oscult-own-error{
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 2em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:red;
+}

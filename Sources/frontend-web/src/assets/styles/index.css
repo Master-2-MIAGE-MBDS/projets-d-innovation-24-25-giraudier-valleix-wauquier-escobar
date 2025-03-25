@@ -1,0 +1,91 @@
+:root {
+  --color-background: #D4E2E2;
+  --color-faded: #CECECE;
+  --color-white: #E3E8E8;
+  --color-primary: #144849;
+
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-color: var( --color-background);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input{
+  width: 100%;
+  background-color: var(--color-white);
+  border: none;
+  outline: none;
+  height: 3em;
+  border-radius: 5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 24px;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  color:var(--color-primary);
+}
+input::placeholder{
+  color: var(--color-faded);
+}
+
+button {
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+button:active {
+  transform: scale(0.95);
+}
+button:disabled{
+  transform: scale(1);
+  cursor: default;
+}
+.mobile{
+  display:none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display:block
+  }
+}

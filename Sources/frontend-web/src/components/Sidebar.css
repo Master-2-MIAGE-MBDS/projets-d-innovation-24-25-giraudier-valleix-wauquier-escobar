@@ -1,0 +1,86 @@
+.sidebar-container{
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(7px);
+    height: 87vh;
+    width: 70px;
+    display: flex;
+    border-radius: 0 1.6em 1.6em 0;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-icon-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-icon{
+    width: 1.5rem;
+    height: auto;
+}
+
+.tick{
+    width: .6em;
+    height: 1.8em;
+    border-radius: 0 .4em .4em 0;
+}
+.tick.active{
+    background-color: var(--color-primary);
+}
+
+.nav-elem{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .sidebar-container{
+        height: unset;
+        top: unset;
+        width: 100vw;
+        bottom: 0;
+        justify-content: center;
+    }
+    .sidebar {
+        height: 50px;
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+       border-radius: 1.6em 1.6em 0 0;
+    }
+    .tick{
+        width: 1.8em;
+        height: .6em;
+        border-radius: .4em .4em 0 0;
+    }
+
+    .nav-elem{
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: unset;
+        margin-bottom: unset;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nav-icon-container{
+        width: unset;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

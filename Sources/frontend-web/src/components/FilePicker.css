@@ -1,0 +1,76 @@
+/* src/components/FilePicker.css */
+
+.file-picker-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.file-drop-zone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5em;
+    background-color: var(--color-white);
+    padding: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.file-drop-zone.dragging {
+    background-color: white;
+}
+
+.file-drop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-faded);
+}
+
+.upload-icon {
+    color: var(--color-faded);
+    width: 8rem;
+    margin-bottom: 12px;
+}
+
+.file-drop-zone.dragging .upload-icon {
+    color: #3498db;
+}
+
+.file-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.file-info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 8px;
+}
+
+.file-error-message {
+    color: #e74c3c;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.filepicker-text{
+    margin: 0;
+    color: var(--color-primary);
+}
+
+@media only screen and (max-width: 1000px) {
+    .upload-icon {
+        width: 5rem;
+    }
+}
